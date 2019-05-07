@@ -5,21 +5,21 @@
 
   
   <title>
-     -
-    photography collection
+    categories |
+    
   </title>
   
 
 
   <meta name="description" content="photography collection">
   <meta name="author" content="Yuan Yao">
-  <meta property="og:title" content>
+  <meta property="og:title" content="categories">
   <meta property="og:description" content="photography collection">
   <meta property="og:site_name" content>
   <meta property="og:image" content="http://yoursite.com/img/default.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="photography collection">
-  <meta name="twitter:title" content>
+  <meta name="twitter:title" content="categories">
 
   <meta name="twitter:image" content="http://yoursite.com/img/default.jpg">
 
@@ -73,34 +73,74 @@
 </nav>
 
     <main class="page main-page">
-        
+        <div class="container blogPost">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="blog-post-title">
+                categories
+            </h2>
+            <p class="meta"><i class="far fa-clock"></i>
+                2019-05-07
+                
+            </p>
+            <!-- Content -->
+            
+            <br>
+            <p class="meta">
+                
+            </p>
+        </div>
 
-<div class="title">
-    <h2>
-        2019/5
-    </h2>
-</div>
+        <div class="col-sm-4">
+            
+
+<span><b>
+        TL;DR</b></span>
+<p>
+    Yet another hexo theme.
+</p>
+<hr>
 
 
-<div class="band">
-    
-    <div class="item-01">
-  <a href="/2019/05/06/hello-world/" class="post">
-    <div class="thumb" style="background-image: url(/./img/default.jpg);"></div>
-    <article>
-      <h1>
-        Hello World
-      </h1>
-      <p>
-        
-      </p>
-      <span>
-        2019-05-06</span>
-    </article>
-  </a>
+<span><b>
+        TL;DR 2</b></span>
+<p>
+    No, not another one :/
+</p>
+<hr>
+
+
+
+
+
+
+<span><a href="https://twitter.com/hexojs" target="_blank" rel="noopener"><b><i class="fab fa-twitter-square"></i>
+            <i class="fas fa-at"></i>
+            hexojs</b></a></span>
+<br>
+<a class="twitter-timeline" data-height="800" data-dnt="true" data-chrome="nofooter transparent noheader noborders " href="https://twitter.com/hexojs?ref_src=twsrc%5Etfw"></a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>
+    </div>
 </div>
-    
-</div>
+<!-- Menu fade on scroll -->
+<script>
+    var isScrolling;
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener('scroll', function (event) {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                $("#navbar").slideDown();
+            } else {
+                $("#navbar").slideUp();
+            }
+            prevScrollpos = currentScrollPos;
+        }, 66);
+    }, false);
+</script>
 
 
     </main>
